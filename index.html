@@ -25,7 +25,7 @@
     .hero h2{font-size:3em;margin-bottom:15px}
     .hero p{font-size:1.2em;max-width:600px}
     .btn{margin-top:20px;padding:12px 24px;background:#22c55e;color:#0f172a;border-radius:30px;
-      font-weight:bold;transition:0.3s;display:inline-flex;align-items:center;gap:8px}
+      font-weight:bold;transition:0.3s;display:inline-flex;align-items:center;gap:8px;cursor:pointer}
     .btn:hover{background:#16a34a;transform:scale(1.05)}
 
     /* Produk */
@@ -40,7 +40,7 @@
     /* FAQ */
     .faq{padding:60px 20px;max-width:900px;margin:auto}
     .faq h2{text-align:center;margin-bottom:25px;color:#22c55e}
-    details{background:#1e293b;margin:10px 0;padding:15px;border-radius:12px;cursor:pointer}
+    details{background:#1e293b;margin:10px 0;padding:15px;border-radius:12px;cursor:pointer;transition:0.3s}
     summary{font-weight:bold;font-size:1.1em}
     details[open]{background:#22c55e20}
 
@@ -86,33 +86,71 @@
     <a href="#produk" class="btn"><i class="fa-solid fa-cart-shopping"></i> Lihat Produk</a>
   </section>
 
-  <!-- Produk -->
-  <section class="products" id="produk">
-    <div class="card">
-      <i class="fa-solid fa-server"></i>
-      <h3>Panel Publik</h3>
-      <p>Harga: Rp4.000<br>Masa aktif 30 hari, garansi 15 hari.</p>
-      <a href="https://wa.me/6283840390064" class="btn">Order</a>
-    </div>
-    <div class="card">
-      <i class="fa-solid fa-lock"></i>
-      <h3>Panel Private</h3>
-      <p>Harga: Rp10.000<br>Server private kualitas premium.</p>
-      <a href="https://t.me/ZeroneOfficial" class="btn">Order</a>
-    </div>
-    <div class="card">
-      <i class="fa-solid fa-key"></i>
-      <h3>OTP WhatsApp</h3>
-      <p>Harga: Rp15.000<br>Kode verifikasi OTP WA instant.</p>
-      <a href="https://wa.me/6283840390064" class="btn">Order</a>
-    </div>
-    <div class="card">
-      <i class="fa-solid fa-message"></i>
-      <h3>OTP Telegram</h3>
-      <p>Harga: Rp20.000<br>Kode verifikasi Telegram aman & cepat.</p>
-      <a href="https://t.me/ZeroneOfficial" class="btn">Order</a>
-    </div>
-  </section>
+<!-- Produk -->
+<section class="products" id="produk">
+  <div class="card">
+    <i class="fa-solid fa-server"></i>
+    <h3>Reseller Publik</h3>
+    <p>Harga: Rp10.000<br>Masa aktif 30 hari, garansi 15 hari.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin%20Zerone%20Official,%20saya%20tertarik%20dengan%20produk%20*Reseller%20Publik*%20%7C%20Harga:%20Rp10.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-lock"></i>
+    <h3>Reseller Private</h3>
+    <p>Harga: Rp20.000<br>Server private kualitas premium.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20tertarik%20dengan%20produk%20*Reseller%20Private*%20%7C%20Harga:%20Rp20.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-server"></i>
+    <h3>Admin Panel</h3>
+    <p>Harga: Rp15.000<br>Server kualitas premium anti delete dan delay.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20tertarik%20dengan%20produk%20*Admin%20Panel*%20%7C%20Harga:%20Rp15.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-server"></i>
+    <h3>Partner Panel</h3>
+    <p>Harga: Rp20.000<br>Server kualitas premium anti delete dan delay.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20tertarik%20dengan%20produk%20*Partner%20Panel*%20%7C%20Harga:%20Rp20.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-lock"></i>
+    <h3>Owner Panel</h3>
+    <p>Harga: Rp25.000<br>Server kualitas premium anti delete dan delay.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20tertarik%20dengan%20produk%20*Owner%20Panel*%20%7C%20Harga:%20Rp25.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-key"></i>
+    <h3>OTP WhatsApp +62</h3>
+    <p>Harga: Rp5.000<br>Kode verifikasi OTP WA instant.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20mau%20order%20*OTP%20WhatsApp%20%2B62*%20%7C%20Harga:%20Rp5.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-key"></i>
+    <h3>OTP WhatsApp +84</h3>
+    <p>Harga: Rp5.000<br>Kode verifikasi OTP WA instant.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20mau%20order%20*OTP%20WhatsApp%20%2B84*%20%7C%20Harga:%20Rp5.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-key"></i>
+    <h3>OTP WhatsApp +63</h3>
+    <p>Harga: Rp5.000<br>Kode verifikasi OTP WA instant.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20mau%20order%20*OTP%20WhatsApp%20%2B63*%20%7C%20Harga:%20Rp5.000" class="btn">Order</a>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-message"></i>
+    <h3>OTP Telegram</h3>
+    <p>Harga: Rp10.000<br>Kode verifikasi Telegram aman & cepat.</p>
+    <a href="https://t.me/ZeroneOfficial?text=Halo%20admin,%20saya%20mau%20order%20*OTP%20Telegram*%20%7C%20Harga:%20Rp10.000" class="btn">Order</a>
+  </div>
+</section>
 
   <!-- FAQ -->
   <section class="faq" id="faq">
@@ -144,7 +182,6 @@
         Beli panel & script aman selalu<br>
         Harga murah kualitas oke<br>
         Order sekarang jangan tunggu lagi 🚀<br><br>
-
         Kami juga sediakan OTP<br>
         WhatsApp & Telegram, ready!!<br>
         Layanan cepat, transaksi mudah<br>

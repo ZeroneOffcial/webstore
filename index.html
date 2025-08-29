@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerone Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif}
+    html{scroll-behavior:smooth}
+    body{background:#0f172a;color:white;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+
+    /* Header */
+    header{position:fixed;top:0;left:0;width:100%;background:rgba(15,23,42,0.8);
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 40px;z-index:1000;backdrop-filter:blur(10px)}
+    header h1{color:#22c55e;font-size:1.5em}
+    nav a{margin:0 15px;color:#fff;transition:0.3s}
+    nav a:hover{color:#22c55e}
+
+    /* Hero */
+    .hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+      background:linear-gradient(135deg,#22c55e20,#16a34a40);text-align:center;animation:fadeIn 2s ease}
+    .hero h2{font-size:3em;margin-bottom:15px}
+    .hero p{font-size:1.2em;max-width:600px}
+    .btn{margin-top:20px;padding:12px 24px;background:#22c55e;color:#0f172a;border-radius:30px;
+      font-weight:bold;transition:0.3s;display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+    .btn:hover{background:#16a34a;transform:scale(1.05)}
+
+    /* Produk */
+    .products{padding:80px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+    .card{background:#1e293b;border-radius:20px;padding:25px;text-align:center;
+      box-shadow:0 6px 15px rgba(0,0,0,0.4);transition:0.4s;animation:fadeUp 1s ease}
+    .card:hover{transform:translateY(-10px);box-shadow:0 10px 25px rgba(34,197,94,0.5)}
+    .card i{font-size:40px;color:#22c55e;margin-bottom:15px}
+    .card h3{margin-bottom:10px;color:#22c55e}
+    .card p{font-size:0.95em;margin-bottom:10px;color:#cbd5e1}
+    .benefits{list-style:none;text-align:left;color:#cbd5e1;margin:15px 0}
+    .benefits li{margin:6px 0}
+
+    /* FAQ */
+    .faq{padding:60px 20px;max-width:900px;margin:auto}
+    .faq h2{text-align:center;margin-bottom:25px;color:#22c55e}
+    details{background:#1e293b;margin:10px 0;padding:15px;border-radius:12px;cursor:pointer;transition:0.3s}
+    summary{font-weight:bold;font-size:1.1em}
+    details[open]{background:#22c55e20}
+
+    /* Lirik */
+    .lyrics{padding:60px 20px;text-align:center}
+    .lyrics h2{margin-bottom:15px;color:#22c55e}
+    .lyrics-box{background:#1e293b;padding:20px;border-radius:12px;max-width:600px;margin:auto;
+      max-height:200px;overflow-y:auto;line-height:1.6;color:#cbd5e1}
+
+    /* Footer */
+    footer{background:#0f172a;padding:30px;text-align:center;border-top:1px solid #1e293b}
+    .social-icons a{margin:0 10px;font-size:22px;color:#22c55e;transition:0.3s}
+    .social-icons a:hover{color:#16a34a;transform:scale(1.2)}
+
+    /* Animasi */
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    .stars{position:fixed;width:100%;height:100%;top:0;left:0;background:url('https://www.transparenttextures.com/patterns/stardust.png');
+      z-index:-1;opacity:0.4;animation:moveStars 60s linear infinite}
+    @keyframes moveStars{from{background-position:0 0;}to{background-position:-10000px 5000px;}}
+  </style>
+</head>
+<body>
+
+  <!-- Stars -->
+  <div class="stars"></div>
+
+  <!-- Header -->
+  <header>
+    <h1><i class="fa-solid fa-store"></i> Zerone Store</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#produk">Produk</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2>🚀 Selamat Datang di Zerone Store</h2>
+    <p>Tempat beli panel, script, OTP dan layanan terbaik dengan harga terjangkau!</p>
+    <a href="#produk" class="btn"><i class="fa-solid fa-cart-shopping"></i> Lihat Produk</a>
+  </section>
+
+<!-- Produk -->
+<section class="products" id="produk">
+
+  <!-- Reseller Publik -->
+  <div class="card">
+    <i class="fa-solid fa-server"></i>
+    <h3>Reseller Publik</h3>
+    <p><strong>Rp10.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Masa aktif 30 hari</li>
+      <li>✅ Garansi 15 hari</li>
+      <li>✅ Harga terjangkau</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20Reseller%20Publik" class="btn">Order</a>
+  </div>
+
+  <!-- Reseller Private -->
+  <div class="card">
+    <i class="fa-solid fa-lock"></i>
+    <h3>Reseller Private</h3>
+    <p><strong>Rp20.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Server Private Premium</li>
+      <li>✅ Anti Delay & Delete</li>
+      <li>✅ Garansi 15 hari</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20Reseller%20Private" class="btn">Order</a>
+  </div>
+
+  <!-- Admin Panel -->
+  <div class="card">
+    <i class="fa-solid fa-user-gear"></i>
+    <h3>Admin Panel</h3>
+    <p><strong>Rp15.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Bisa Open Panel</li>
+      <li>✅ Anti Delete & Delay</li>
+      <li>✅ Garansi 15 hari</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20Admin%20Panel" class="btn">Order</a>
+  </div>
+
+  <!-- Partner Panel -->
+  <div class="card">
+    <i class="fa-solid fa-handshake"></i>
+    <h3>Partner Panel</h3>
+    <p><strong>Rp20.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Bisa Buka Admin</li>
+      <li>✅ Anti Delay & Delete</li>
+      <li>✅ Garansi 15 hari</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20Partner%20Panel" class="btn">Order</a>
+  </div>
+
+  <!-- Owner Panel -->
+  <div class="card">
+    <i class="fa-solid fa-crown"></i>
+    <h3>Owner Panel</h3>
+    <p><strong>Rp25.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Bisa Buka Reseller & Admin</li>
+      <li>✅ Masa Aktif Permanen</li>
+      <li>✅ Garansi 15 hari</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20Owner%20Panel" class="btn">Order</a>
+  </div>
+
+  <!-- Userbot -->
+  <div class="card">
+    <i class="fa-solid fa-robot"></i>
+    <h3>Userbot</h3>
+    <p><strong>Rp20.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Full Fitur Premium</li>
+      <li>✅ Bisa Request Fitur</li>
+      <li>✅ Garansi 15 hari</li>
+      <li>✅ Support 24 Jam</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20Userbot" class="btn">Order</a>
+  </div>
+
+  <!-- Reseller Userbot -->
+  <div class="card">
+    <i class="fa-solid fa-people-arrows"></i>
+    <h3>Reseller Userbot</h3>
+    <p><strong>Rp30.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Bisa Jual Userbot</li>
+      <li>✅ Full Akses Fitur</li>
+      <li>✅ Garansi 15 hari</li>
+      <li>✅ Harga Spesial Reseller</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20Reseller%20Userbot" class="btn">Order</a>
+  </div>
+
+  <!-- OTP WA +62 -->
+  <div class="card">
+    <i class="fa-solid fa-key"></i>
+    <h3>OTP WhatsApp +62</h3>
+    <p><strong>Rp5.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Kode OTP Instant</li>
+      <li>✅ Valid & Aman</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20OTP%20WA%20%2B62" class="btn">Order</a>
+  </div>
+
+  <!-- OTP WA +84 -->
+  <div class="card">
+    <i class="fa-solid fa-key"></i>
+    <h3>OTP WhatsApp +84</h3>
+    <p><strong>Rp5.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Kode OTP Instant</li>
+      <li>✅ Valid & Aman</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20OTP%20WA%20%2B84" class="btn">Order</a>
+  </div>
+
+  <!-- OTP WA +63 -->
+  <div class="card">
+    <i class="fa-solid fa-key"></i>
+    <h3>OTP WhatsApp +63</h3>
+    <p><strong>Rp5.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Kode OTP Instant</li>
+      <li>✅ Valid & Aman</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20OTP%20WA%20%2B63" class="btn">Order</a>
+  </div>
+
+  <!-- OTP Telegram -->
+  <div class="card">
+    <i class="fa-solid fa-message"></i>
+    <h3>OTP Telegram</h3>
+    <p><strong>Rp10.000</strong></p>
+    <ul class="benefits">
+      <li>✅ Kode OTP Cepat</li>
+      <li>✅ Aman & Valid</li>
+    </ul>
+    <a href="https://t.me/ZeroneOfficial?text=Order%20OTP%20Telegram" class="btn">Order</a>
+  </div>
+</section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <h2>❓ FAQ Pembelian</h2>
+    <details>
+      <summary>Bagaimana cara membeli Panel & Script?</summary>
+      <p>Klik produk, lalu tekan tombol Order. Anda akan diarahkan ke admin via WhatsApp/Telegram.</p>
+    </details>
+    <details>
+      <summary>Apakah ada garansi untuk Panel & Script?</summary>
+      <p>Ya, semua panel ada garansi 15 hari. Script dapat update jika ada bug.</p>
+    </details>
+    <details>
+      <summary>Bagaimana cara membeli produk OTP WhatsApp?</summary>
+      <p>Pilih produk OTP WA, lakukan pembayaran, lalu kode OTP valid dikirimkan.</p>
+    </details>
+    <details>
+      <summary>Bagaimana cara membeli produk OTP Telegram?</summary>
+      <p>Sama seperti OTP WA, pilih produk, bayar, lalu admin kirimkan kode OTP.</p>
+    </details>
+  </section>
+
+  <!-- Lirik -->
+  <section class="lyrics">
+    <h2>Zerone Official</h2>
+    <div class="lyrics-box" id="lyricsBox">
+      <p>
+        Zerone Store hadir untukmu 💚<br>
+        Beli panel & script aman selalu<br>
+        Harga murah kualitas oke<br>
+        Order sekarang jangan tunggu lagi 🚀<br><br>
+        Kami juga sediakan OTP<br>
+        WhatsApp & Telegram, ready!!<br>
+        Layanan cepat, transaksi mudah<br>
+        Tinggal klik, langsung beres semua 💡
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <div class="social-icons">
+      <a href="https://websitekita.vercel.app"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://t.me/ZeroneOfficial"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://www.youtube.com/@ZeroOffc"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Zerone Store. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Audio -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="https://files.catbox.moe/ubhpu3.mp3" type="audio/mpeg">
+  </audio>
+  <div style="position:fixed;bottom:20px;right:20px;">
+    <button onclick="toggleMusic()" class="btn"><i class="fa-solid fa-music"></i> Musik</button>
+  </div>
+
+  <script>
+    let music = document.getElementById("bgMusic");
+    function toggleMusic(){
+      if(music.paused){music.play();}else{music.pause();}
+    }
+  </script>
+</body>
+</html>
